@@ -1,0 +1,172 @@
+.main__home{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* BEM */ 
+.noticia{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+
+    &__texto{
+    background-color: $layoutColor;
+    padding:0.5em;
+    }
+
+    &__fecha{
+    background-color: $accent3;
+    display: flex;
+    padding:0.5em;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__titulo{
+    color: $accent3;
+    font-weight: 300;
+    font-size:1.3rem;
+    }
+
+    &__parrafo{
+    font-size: 0.8rem;
+    }
+
+    &__numero, &__span {
+        color: $bgBodyColor;
+    }
+}
+
+
+  /* small */ 
+  @media only screen and (max-width: 767px){
+
+    .main__home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5em;
+        margin-bottom:0.5em;	
+    } 
+    
+    .main__home__derecha{
+        background-color: $layoutColor;
+        width: 85%;
+        padding-top:0.5em;
+        padding-left:1em;
+        padding-right:1em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .redes__twitter{
+        &__full, &__medium{
+            display: none;
+        }
+        &__small{
+            align-self: center;
+        }
+    }
+
+    .redes__spotify{
+        display: none;
+    }
+
+}
+
+/* medium */
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+ 
+    .main__home{
+        &__centro{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+            margin-bottom:0.5em;
+                
+        }
+    
+        &__derecha{
+            background-color: $layoutColor;
+            width: 100%;
+            padding-top:0.5em;
+            padding-left:1em;
+            padding-right:1em;
+            padding-bottom:0.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            &__redes{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
+    .redes__twitter{
+
+        &__small, &__medium{
+            display: none;
+        }
+    }
+    
+} 
+
+/* big */ 
+@media only screen and (min-width: 1200px){
+
+    /*BEM*/
+    .main__home{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 5% 67% 3% 20% 5%;
+        grid-template-areas: ". centro . derecha .";
+
+        &__centro{
+            grid-area: centro;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+        }
+     
+        &__derecha{
+            grid-area: derecha;
+            background-color: $layoutColor;
+            margin-top:1em;
+            height: 430px;
+            position: -webkit-sticky;
+            position:sticky;
+            top: 5.5em;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+            padding-left:1em;
+            padding-right:1em;
+            padding-bottom:1em;
+                
+        }
+    
+    }
+
+
+    
+    .redes__twitter{
+        &__small, &__medium{
+            display: none;
+        }
+        &__full{
+            align-self: center;
+        }
+    }
+
+    .redes__spotify{
+        display: none;
+    }
+
+
+} 

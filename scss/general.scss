@@ -1,0 +1,16 @@
+/* STYLE */ 
+@import "reset.scss";
+@import "variables.scss";
+@import "fonts.scss";
+
+/* LAYOUT */
+@import "./layout/layout.scss";
+
+/* PAGES */ 
+@import "./pages/home.scss";
+@import "./pages/biografia.scss";
+@import "./pages/discografia.scss";
+@import "./pages/galeria.scss";
+@import "./pages/otrosProyectos.scss";
+@import "./pages/contacto.scss"; 
+
