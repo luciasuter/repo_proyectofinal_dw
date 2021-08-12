@@ -1,16 +1,16 @@
 /* STYLE */ 
-@import "reset.scss";
-@import "variables.scss";
-@import "fonts.scss";
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_fonts.scss";
 
 /* LAYOUT */
-@import "./layout/layout.scss";
+@import "./layout/_layout.scss";
 
 /* PAGES */ 
-@import "./pages/home.scss";
-@import "./pages/biografia.scss";
-@import "./pages/discografia.scss";
-@import "./pages/galeria.scss";
-@import "./pages/otrosProyectos.scss";
-@import "./pages/contacto.scss"; 
+@import "./pages/_home.scss";
+@import "./pages/_biografia.scss";
+@import "./pages/_discografia.scss";
+@import "./pages/_galeria.scss";
+@import "./pages/_otrosProyectos.scss";
+@import "./pages/_contacto.scss"; 
 

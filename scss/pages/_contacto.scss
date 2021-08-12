@@ -1,0 +1,140 @@
+.main__contacto__contenido{
+    background-color: $layoutColor;
+    width:100%;
+    margin: 0.5em;
+    
+    
+}
+
+.contacto__form{
+    width:100%;
+    margin-bottom:0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    &__textarea{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__botones button{
+        margin-left: 0.5em;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem .75rem .375rem ; 
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+
+/*MEDIA QUERIES*/ 
+
+@media only screen and (max-width: 767px){
+    .main__contacto__contenido{
+    padding-left:1em;
+    padding-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    .main__contacto__contenido{
+        padding-left:4em;
+        padding-right: 4em;
+        }
+
+        .contacto__form{
+            padding-top:0.5em;
+
+            &__mail{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            &__nombre{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+    label{
+        padding-right:0.5em;
+    }    
+
+    textarea{
+        height:25vh;
+    }
+}
+
+/* BIG */ 
+@media only screen and (min-width: 1200px){ 
+
+.main__discografia{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: ". centro .";
+    margin-top:1em;
+    margin-bottom:1em;
+
+&__contenido{
+    width:100%;
+    grid-area: centro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:4em;
+    padding-right: 4em;
+    }
+}
+
+.contacto__form{
+    width:50vw;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:0.5em;
+
+    &__mail{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__nombre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+label{
+padding-right:0.5em;
+}    
+
+textarea{
+height:25vh;
+}
+}

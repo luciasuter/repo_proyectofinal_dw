@@ -1,0 +1,133 @@
+.fotos__individual img:hover{
+    filter: brightness(100%);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.main__galeria{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* MEDIA QUERIES */ 
+/*small ver*/
+@media only screen and (max-width: 767px){
+    
+    .main__galeria{
+        &__contenido{
+        display: flex;
+        flex-direction: column;   
+        }
+        } 
+    
+    .fotos{
+        align-self: center;
+        overflow: scroll;
+        overflow-x: hidden;
+    
+        &__individual img{
+            width: 23.5em; 
+            filter: brightness(50%);
+            transition: transform 0.2s;
+        }
+    }
+    
+}
+
+/*medium ver*/
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+
+.main__galeria{
+    &__contenido{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+}
+    
+
+.fotos{
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-template-areas: "live misc";
+    justify-items: center;
+
+    &__live{
+    grid-area: live;
+    height: 82vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+
+    &__misc{   
+    grid-area: misc;
+    height: 82vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+
+    &__individual img{
+    width: 100%;
+    filter: brightness(50%);
+    transition: transform 0.2s;
+    padding-bottom:0.1em;
+    }
+    
+}
+    
+}
+
+/*full ver*/
+@media only screen and (min-width: 1200px){
+
+    .main__galeria{
+        grid-area: main;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        &__contenido{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;  
+        }
+       
+    }
+
+    .fotos{
+        display: grid;
+        grid-auto-columns: 50% 50%;
+        grid-template-areas: "live misc";
+        justify-items: center;
+        overflow-y: hidden;
+    
+        &__live{
+        grid-area: live;
+        height: 88vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        }
+    
+        &__misc{   
+        grid-area: misc;
+        height: 88vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        }
+    
+        &__individual img{
+        width: 100%;
+        filter: brightness(50%);
+        transition: transform 0.2s;
+        padding-bottom:0.1em;
+        }
+        
+    
+    }
+}
