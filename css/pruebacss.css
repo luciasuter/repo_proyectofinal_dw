@@ -581,8 +581,8 @@ body {
     justify-content: center; }
   .disco__cover img {
     width: 70%;
-    height: 70%;
-    margin-top: 1em; }
+    margin-top: 1em;
+    padding-bottom: 0.5em; }
   .disco__detalles__lista {
     list-style: circle; }
   .disco__tracklist__lista li {
