@@ -1,24 +1,31 @@
-/* BG COLOURS */ 
-$layoutColor: rgb(247, 247, 247); /*layout solido*/
-$bgBodyColor:rgb(235,235,235);  /*bg body*/
-$bgFooterColor: rgb(226, 226, 226); /*bg footer*/
+// BG COLOURS
+$layoutColor: rgb(247, 247, 247); //layout solido
+$bgBodyColor:rgb(235,235,235);  //bg body
+$bgFooterColor: rgb(226, 226, 226); //bg footer
 
-/*TEXTO*/
+//TEXTO
 $colorTxt: rgb(100, 111, 116);
 $colorTxtFooter: rgb(72, 85, 90);
 
-/*ACCENT*/
+//ACCENT
 $accent1: rgb(92, 165, 194);
 $accent2: rgb(107, 158, 179);
 $accent3: rgb(118, 143, 153); 
 
-/*ESPACIO*/
+//ESPACIO 
+$space1: 0.1em;
+$space2: 0.5em;
+$space3: 1em;
+$space4: 2em;
+
+// texto
 $spaceTxt1: 0.1rem;
 $spaceTxt2: 0.5rem;
 $spaceTxt3: 1rem;
 $spaceTxt4: 2rem;
 
-/*FUENTE*/
+
+//FUENTE
 $headerTituloFont: normal 2rem 'Lato', sans-serif;
 $headerTituloFontWeight: 300;
 

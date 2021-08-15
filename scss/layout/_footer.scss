@@ -7,22 +7,28 @@ footer{
     .footer{
         grid-area:footer;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0.5em;
+        flex-direction: column;
+        padding: $space2;
 
         &__titulo{
-            padding-bottom:0.5rem;
+            display: none;
+            padding-bottom:$spaceTxt2;
         }
 
-        &__navbar{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
+
 
         &__links{
-            margin:0.7em 0 0 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 0;
+            margin-bottom: $space2;
+
+        }
+
+        &__link__a{
+            padding-left: $spaceTxt3;
         }
 
     }  
@@ -52,11 +58,15 @@ footer{
             flex-direction: row;
             justify-content: space-evenly;
             padding:0;
-            margin: 0.5em 0 0 0;
+            margin: 0 0 0 0;
                 
         }
 
-    }  
+    }
+    
+    .main__iconos {
+        margin-top: $space2;
+      }
     
 }
     

@@ -1,8 +1,8 @@
 .main__otros__contenido{
     background-color: $layoutColor;
     width:100%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: $space2;
+    margin-bottom: $space2;
 }
 
 .main__otros__columna{
@@ -53,11 +53,11 @@
     color: $accent3;
     font-style: italic;
     font-weight: 300;
-    font-size:1rem;
+    font-size:$spaceTxt3;
     }
 
     &__parrafo{
-    font-size: 0.6rem;
+    font-size: $spaceTxt1*6;
     }
 }
 }
@@ -68,11 +68,11 @@
         color: $accent3;
         font-style: italic;
         font-weight: 300;
-        font-size:1.3rem;
+        font-size:$spaceTxt3+($spaceTxt1*3);
         }
         
         &__parrafo{
-        font-size: 0.8rem;
+        font-size:  $spaceTxt1*8;
         }
     }
 }
@@ -102,11 +102,11 @@
         color: $accent3;
         font-style: italic;
         font-weight: 300;
-        font-size:1.3rem;
+        font-size:$spaceTxt3+($spaceTxt1*3);
             }
         
         &__parrafo{
-        font-size: 0.8rem;
+        font-size: $spaceTxt1*8;
             }
     }
     

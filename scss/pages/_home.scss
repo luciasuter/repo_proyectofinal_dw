@@ -4,19 +4,19 @@
 
 /* BEM */ 
 .noticia{
-    margin-bottom: 1em;
+    margin-bottom: $space3;
     display: flex;
     flex-direction: row;
 
     &__texto{
     background-color: $layoutColor;
-    padding:0.5em;
+    padding:$space2;
     }
 
     &__fecha{
     background-color: $accent3;
     display: flex;
-    padding:0.5em;
+    padding:$space2;
     flex-direction: column;
     align-items: center;
     }
@@ -24,11 +24,11 @@
     &__titulo{
     color: $accent3;
     font-weight: 300;
-    font-size:1.3rem;
+    font-size:$spaceTxt3+($spaceTxt1*3);
     }
 
     &__parrafo{
-    font-size: 0.8rem;
+    font-size: $spaceTxt1*8;
     }
 
     &__numero, &__span {
@@ -45,16 +45,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 0.5em;
-        margin-bottom:0.5em;	
+        margin-top: $space2;
+        margin-bottom:$space2;	
     } 
     
     .main__home__derecha{
         background-color: $layoutColor;
         width: 85%;
-        padding-top:0.5em;
-        padding-left:1em;
-        padding-right:1em;
+        padding-top:$space2;
+        padding-left:$space3;
+        padding-right:$space3;
         display: flex;
         flex-direction: column;
         
@@ -74,7 +74,7 @@
     }
 
     .noticia__video video{
-        padding:1em;
+        padding:$space3;
         width:300px;
     }
 
@@ -88,18 +88,18 @@
             width:100%;
             display: flex;
             flex-direction: column;
-            margin-top: 1em;
-            margin-bottom:0.5em;
+            margin-top: $space3;
+            margin-bottom:$space2;
                 
         }
     
         &__derecha{
             background-color: $layoutColor;
             width: 100%;
-            padding-top:0.5em;
-            padding-left:1em;
-            padding-right:1em;
-            padding-bottom:0.5em;
+            padding-top:$space2;
+            padding-left:$space3;
+            padding-right:$space3;
+            padding-bottom:$space2;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -118,7 +118,7 @@
         justify-content: center;
     }
     .noticia__video video{
-        padding:1em;
+        padding:$space3;
         width:600px;
         
     }
@@ -146,23 +146,23 @@
             grid-area: centro;
             display: flex;
             flex-direction: column;
-            margin-top: 1em;
+            margin-top: $space3;
         }
      
         &__derecha{
             grid-area: derecha;
             background-color: $layoutColor;
-            margin-top:1em;
+            margin-top:$space3;
             height: 430px;
             position: -webkit-sticky;
             position:sticky;
-            top: 5.5em;
+            top: $spaceTxt3*5+($spaceTxt2);
             display: flex;
             flex-direction: column;
-            margin-top: 1em;
-            padding-left:1em;
-            padding-right:1em;
-            padding-bottom:1em;
+            margin-top: $space3;
+            padding-left:$space3;
+            padding-right:$space3;
+            padding-bottom:$space3;
                 
         }
 
@@ -171,7 +171,7 @@
             justify-content: center;
         }
         .noticia__video video{
-            padding:1em;
+            padding:$space3;
             width:800px;
             
         }

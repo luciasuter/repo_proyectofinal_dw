@@ -1,8 +1,8 @@
 .main__discografia__contenido{
     background-color: $layoutColor;
     width:100%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: $space2;
+    margin-bottom: $space2;
 }
 
 /* ACCORDION BT */ 
@@ -33,11 +33,11 @@
 .disco{
     width: 100%;
     line-height: 30px;
-    font-size: 0.8rem;
+    font-size: $spaceTxt1*8;
     border: 1px solid rgba(0, 0, 0, 0.082);
 
 &__titulo{
-    font-size: 0.8rem;
+    font-size: $spaceTxt1*8;
     font-weight: 600;
     color:$accent3;
 }
@@ -58,7 +58,7 @@
     align-items: stretch;
     justify-self: center;
     font-weight: 500;
-    color:#858E92; /*cambiar*/
+    color:#858E92;
 }
    
 &__borde{
@@ -81,12 +81,17 @@
 
 &__cover img{
     width:70%;
-    margin-top: 1em;
-    padding-bottom:0.5em;
+    margin-top: $space3;
+    padding-bottom:$space2;
 }
 
 &__detalles__lista{
     list-style: circle;
+}
+
+&__tracklist__lista{
+    margin-bottom: 0;
+    margin-top: $space2;
 }
 
 &__tracklist__lista li{
@@ -104,8 +109,8 @@
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-areas: ". centro .";
-    margin-top:1em;
-    margin-bottom:1em;
+    margin-top:$space3;
+    margin-bottom:$space3;
 
 &__contenido{
     width:60vw;
@@ -129,7 +134,7 @@
 .disco__cover img{
     width:100%;
     height:100%;
-    margin: 1em 1em 0 1em;
+    margin: $space3 $space3 0 $space3;
 }
     
  

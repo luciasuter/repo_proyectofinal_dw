@@ -27,16 +27,13 @@ a{
 label, input, option, select, textarea, button{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size:1rem;
+    font-size:$spaceTxt3;
     
 }
 
 input, option, select, textarea{
-    font-size:0.8rem;
+    font-size:$spaceTxt1*8;
 }
-
-
-
 
 /* ==== HEADER ==== */ 
 /*BEM*/ 
@@ -44,9 +41,8 @@ input, option, select, textarea{
 
     &__titulo{
     @include titulo($accent1, 300, italic );
-    }
+    } 
 
-    /*navbar links*/
     &__link__a{
     font-weight: 300;
     text-transform: uppercase;
@@ -60,9 +56,10 @@ input, option, select, textarea{
 
 /* == MAIN == */ 
 .main__titulo{
-    @extend .header__link__a; /*extend*/ 
+    font-weight: 300;
+    text-transform: uppercase;
     color: $accent3;
-    font-size:1.3rem; 
+    font-size:$spaceTxt3+($spaceTxt1*3); 
     text-align: center;
 }
 
@@ -72,10 +69,10 @@ input, option, select, textarea{
     justify-content: center;
 
     i{
-    color:$colorTxtFooter;
-    padding-right: 0.3em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
+    color:$colorTxt;
+    padding-right: $space1*3;
+    padding-top: $space1;
+    padding-bottom: $space1;
 }
 
     i:hover{
@@ -92,14 +89,14 @@ input, option, select, textarea{
 
     &__titulo{
         @include titulo($accent2, 600 , italic);
-        font-size:1rem;
+        font-size:$spaceTxt3;
         margin:0;
         padding:0;
     }
     
     &__link__a{
         font-weight: 500;
-        font-size:0.8rem;
+        font-size:$spaceTxt1*8;
     }
     
     &__link__a:hover{
@@ -109,7 +106,7 @@ input, option, select, textarea{
     
     &__creditos{
         color: $colorTxtFooter;
-        font-size: 0.7rem;
+        font-size: $spaceTxt1*7;
     }
 }
 

@@ -55,14 +55,14 @@
 
     &__live{
     grid-area: live;
-    height: 82vh;
+    height: 85vh;
     overflow: scroll;
     overflow-x: hidden;
     }
 
     &__misc{   
     grid-area: misc;
-    height: 82vh;
+    height: 85vh;
     overflow: scroll;
     overflow-x: hidden;
     }
@@ -71,7 +71,7 @@
     width: 100%;
     filter: brightness(50%);
     transition: transform 0.2s;
-    padding-bottom:0.1em;
+    padding-bottom:$space1;
     }
     
 }
@@ -125,7 +125,7 @@
         width: 100%;
         filter: brightness(50%);
         transition: transform 0.2s;
-        padding-bottom:0.1em;
+        padding-bottom:$space1;
         }
         
     

@@ -1,14 +1,14 @@
 .main__contacto__contenido{
     background-color: $layoutColor;
     width:100%;
-    margin: 0.5em;
+    margin: $space2;
     
     
 }
 
 .contacto__form{
     width:100%;
-    margin-bottom:0.5em;
+    margin-bottom:$space2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,7 +27,7 @@
     }
 
     &__botones button{
-        margin-left: 0.5em;
+        margin-left: $space2;
     }
 }
 
@@ -35,7 +35,7 @@
     display: block;
     width: 100%;
     padding: .375rem .75rem .75rem .375rem ; 
-    font-size: 0.8rem;
+    font-size: $spaceTxt1*8;
     font-weight: 300;
     line-height: 1.5;
     color: #212529;
@@ -45,26 +45,26 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: .25rem;
+    border-radius: $spaceTxt2%2;
 }
 
 /*MEDIA QUERIES*/ 
 
 @media only screen and (max-width: 767px){
     .main__contacto__contenido{
-    padding-left:1em;
-    padding-right: 1em;
+    padding-left:$space3;
+    padding-right: $space3;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px){
     .main__contacto__contenido{
-        padding-left:4em;
-        padding-right: 4em;
+        padding-left:$space3*4;
+        padding-right: $space3*4;
         }
 
         .contacto__form{
-            padding-top:0.5em;
+            padding-top:$space2;
 
             &__mail{
                 display: flex;
@@ -80,7 +80,7 @@
         }
 
     label{
-        padding-right:0.5em;
+        padding-right:$space2;
     }    
 
     textarea{
@@ -91,13 +91,13 @@
 /* BIG */ 
 @media only screen and (min-width: 1200px){ 
 
-.main__discografia{
+.main__contacto{ 
     grid-area: main;
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-areas: ". centro .";
-    margin-top:1em;
-    margin-bottom:1em;
+    margin-top:$space3;
+    margin-bottom:$space3;
 
 &__contenido{
     width:100%;
@@ -105,16 +105,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left:4em;
-    padding-right: 4em;
+    padding-left:$space3*4;
+    padding-right: $space3*4;
     }
 }
 
 .contacto__form{
     width:50vw;
-    padding-left:2em;
-    padding-right:2em;
-    padding-top:0.5em;
+    padding-left:$space4;
+    padding-right:$space4;
+    padding-top:$space2;
 
     &__mail{
         display: flex;
@@ -131,7 +131,7 @@
 
 
 label{
-padding-right:0.5em;
+padding-right:$space2;
 }    
 
 textarea{
