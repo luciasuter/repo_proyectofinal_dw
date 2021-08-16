@@ -65,6 +65,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     border-right:1px solid rgba(0, 0, 0, 0.082);
 }
 
@@ -80,7 +81,8 @@
 }
 
 &__cover img{
-    width:70%;
+    max-width:80%;
+    max-height:80%;
     margin-top: $space3;
     padding-bottom:$space2;
 }
@@ -89,10 +91,6 @@
     list-style: circle;
 }
 
-&__tracklist__lista{
-    margin-bottom: 0;
-    margin-top: $space2;
-}
 
 &__tracklist__lista li{
     list-style: decimal;
@@ -100,6 +98,22 @@
 }    
 
 /*MEDIA QUERIES*/ 
+
+/*medium ver*/
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+.disco{ 
+&__cover{
+    display: flex;
+    justify-content: center;    
+}
+
+&__cover img{
+    max-width:100%;
+    max-height:100%;
+    margin-top: 0;
+}
+}
+}
 
 /* BIG */ 
 @media only screen and (min-width: 1200px){ 
@@ -132,9 +146,13 @@
 }
     
 .disco__cover img{
-    width:100%;
-    height:100%;
+    max-width:95%;
+    max-height:95%;
     margin: $space3 $space3 0 $space3;
+}
+
+.disco__tracklist__lista{
+    align-content: center;
 }
     
  

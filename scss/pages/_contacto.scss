@@ -55,6 +55,11 @@
     padding-left:$space3;
     padding-right: $space3;
     }
+
+    label{
+        padding-bottom:$space2;
+        
+    }   
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px){
@@ -81,6 +86,7 @@
 
     label{
         padding-right:$space2;
+        
     }    
 
     textarea{
