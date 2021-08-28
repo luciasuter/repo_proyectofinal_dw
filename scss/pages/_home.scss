@@ -51,26 +51,16 @@
     
     .main__home__derecha{
         background-color: $layoutColor;
-        width: 85%;
-        padding-top:$space2;
-        padding-left:$space3;
-        padding-right:$space3;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        padding: $space2 $space2 $space2 $space2;
+
         
     }
 
-    .redes__twitter{
+    .redes__spotify{
         &__full, &__medium{
             display: none;
         }
-        &__small{
-            align-self: center;
-        }
-    }
-
-    .redes__spotify{
-        display: none;
     }
 
     .noticia__video video{
@@ -96,20 +86,7 @@
         &__derecha{
             background-color: $layoutColor;
             width: 100%;
-            padding-top:$space2;
-            padding-left:$space3;
-            padding-right:$space3;
-            padding-bottom:$space2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            &__redes{
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
+            padding: $space2 $space2 $space2 $space2;
         }
     }
 
@@ -123,9 +100,8 @@
         
     }
     
-    .redes__twitter{
-
-        &__small, &__medium{
+    .redes__spotify{
+        &__small, &__full{
             display: none;
         }
     }
@@ -180,17 +156,13 @@
 
 
     
-    .redes__twitter{
+    .redes__spotify{
         &__small, &__medium{
             display: none;
         }
         &__full{
             align-self: center;
         }
-    }
-
-    .redes__spotify{
-        display: none;
     }
 
 

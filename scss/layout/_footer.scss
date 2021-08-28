@@ -2,6 +2,10 @@ footer{
     background-color: $bgFooterColor;
 }
 
+.footer__creditos{
+    text-align:center;
+}
+
 /* small */ 
 @media only screen and (max-width: 767px){
     .footer{
